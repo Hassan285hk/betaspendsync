@@ -71,30 +71,32 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.background,
       body: Stack(
         children: [
-          // Background decorative gradient circles/orbs
+          // Background orb — yellow glow top-right
           Positioned(
-            top: -100,
-            right: -100,
+            top: -80,
+            right: -80,
             child: Container(
-              width: 300,
-              height: 300,
+              width: 280,
+              height: 280,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: AppColors.primary.withOpacity(0.12),
+                color: AppColors.accent.withOpacity(0.12),
               ),
             ),
           ),
+          // Background orb — blue glow bottom-left
           Positioned(
-            bottom: -50,
-            left: -50,
+            bottom: -60,
+            left: -60,
             child: Container(
-              width: 250,
-              height: 250,
+              width: 260,
+              height: 260,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: AppColors.accent.withOpacity(0.08),
+                color: AppColors.primaryLight.withOpacity(0.18),
               ),
             ),
           ),
@@ -106,10 +108,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    // Yellow wallet icon
                     const Icon(
                       Icons.account_balance_wallet_rounded,
-                      size: 64,
-                      color: AppColors.primary,
+                      size: 68,
+                      color: AppColors.accent,
                     ),
                     const SizedBox(height: 24),
                     Text(
@@ -134,10 +137,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     Container(
                       padding: const EdgeInsets.all(24),
                       decoration: BoxDecoration(
-                        color: AppColors.cardBackground.withOpacity(0.6),
+                        color: AppColors.cardBackground,
                         borderRadius: BorderRadius.circular(28),
                         border: Border.all(
-                          color: AppColors.surfaceLight.withOpacity(0.2),
+                          color: AppColors.accent.withOpacity(0.2),
                           width: 1.5,
                         ),
                       ),
@@ -147,11 +150,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           TextField(
                             controller: _emailController,
                             keyboardType: TextInputType.emailAddress,
+                            style: const TextStyle(color: AppColors.textPrimary),
                             decoration: const InputDecoration(
                               labelText: 'Email Address',
                               prefixIcon: Icon(
                                 Icons.email_outlined,
-                                color: AppColors.primary,
+                                color: AppColors.accent,
                               ),
                             ),
                           ),
@@ -159,11 +163,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           TextField(
                             controller: _passwordController,
                             obscureText: _obscurePassword,
+                            style: const TextStyle(color: AppColors.textPrimary),
                             decoration: InputDecoration(
                               labelText: 'Password',
                               prefixIcon: const Icon(
                                 Icons.lock_outline_rounded,
-                                color: AppColors.primary,
+                                color: AppColors.accent,
                               ),
                               suffixIcon: IconButton(
                                 icon: Icon(
@@ -206,8 +211,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: Text(
                             'Sign Up',
                             style: GoogleFonts.poppins(
-                              color: AppColors.primary,
-                              fontWeight: FontWeight.w600,
+                              color: AppColors.accent,
+                              fontWeight: FontWeight.w700,
                               fontSize: 13,
                             ),
                           ),

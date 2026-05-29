@@ -71,18 +71,18 @@ class DashboardScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: AppColors.primary.withOpacity(0.3),
-                          width: 1.5,
+                          color: AppColors.accent,
+                          width: 2,
                         ),
                       ),
                       child: CircleAvatar(
                         radius: 22,
-                        backgroundColor: AppColors.surfaceLight,
+                        backgroundColor: AppColors.accent.withOpacity(0.2),
                         child: Text(
                           state.userName.isNotEmpty ? state.userName[0].toUpperCase() : 'U',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.bold,
-                            color: AppColors.primary,
+                            color: AppColors.accent,
                           ),
                         ),
                       ),
@@ -125,7 +125,7 @@ class DashboardScreen extends StatelessWidget {
                           ),
                           const Icon(
                             Icons.wifi_rounded,
-                            color: Colors.white,
+                            color: AppColors.accent,
                             size: 20,
                           ),
                         ],
@@ -302,16 +302,16 @@ class DashboardScreen extends StatelessWidget {
               MaterialPageRoute(builder: (_) => const AddExpenseScreen()),
             );
           },
-          elevation: 4,
-          icon: const Icon(Icons.add_rounded, color: Colors.white),
+          elevation: 6,
+          icon: const Icon(Icons.add_rounded, color: AppColors.primary),
           label: Text(
             'Add Expense',
             style: GoogleFonts.poppins(
-              fontWeight: FontWeight.w600,
-              color: Colors.white,
+              fontWeight: FontWeight.w700,
+              color: AppColors.primary,
             ),
           ),
-          backgroundColor: AppColors.primary,
+          backgroundColor: AppColors.accent,
         ),
       ),
     );

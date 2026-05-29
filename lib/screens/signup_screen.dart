@@ -85,7 +85,7 @@ class _SignupScreenState extends State<SignupScreen> {
               height: 300,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: AppColors.primary.withOpacity(0.12),
+                color: AppColors.accent.withOpacity(0.12),
               ),
             ),
           ),
@@ -112,7 +112,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     const Icon(
                       Icons.person_add_rounded,
                       size: 64,
-                      color: AppColors.primary,
+                      color: AppColors.accent,
                     ),
                     const SizedBox(height: 24),
                     Text(
@@ -137,10 +137,10 @@ class _SignupScreenState extends State<SignupScreen> {
                     Container(
                       padding: const EdgeInsets.all(24),
                       decoration: BoxDecoration(
-                        color: AppColors.cardBackground.withOpacity(0.6),
+                        color: AppColors.cardBackground,
                         borderRadius: BorderRadius.circular(28),
                         border: Border.all(
-                          color: AppColors.surfaceLight.withOpacity(0.2),
+                          color: AppColors.accent.withOpacity(0.2),
                           width: 1.5,
                         ),
                       ),
@@ -154,7 +154,7 @@ class _SignupScreenState extends State<SignupScreen> {
                               labelText: 'Full Name',
                               prefixIcon: Icon(
                                 Icons.person_outline_rounded,
-                                color: AppColors.primary,
+                                color: AppColors.accent,
                               ),
                             ),
                           ),
@@ -166,7 +166,7 @@ class _SignupScreenState extends State<SignupScreen> {
                               labelText: 'Email Address',
                               prefixIcon: Icon(
                                 Icons.email_outlined,
-                                color: AppColors.primary,
+                                color: AppColors.accent,
                               ),
                             ),
                           ),
@@ -178,7 +178,7 @@ class _SignupScreenState extends State<SignupScreen> {
                               labelText: 'Password',
                               prefixIcon: const Icon(
                                 Icons.lock_outline_rounded,
-                                color: AppColors.primary,
+                                color: AppColors.accent,
                               ),
                               suffixIcon: IconButton(
                                 icon: Icon(
@@ -218,8 +218,8 @@ class _SignupScreenState extends State<SignupScreen> {
                           child: Text(
                             'Login',
                             style: GoogleFonts.poppins(
-                              color: AppColors.primary,
-                              fontWeight: FontWeight.w600,
+                              color: AppColors.accent,
+                              fontWeight: FontWeight.w700,
                               fontSize: 13,
                             ),
                           ),

@@ -125,13 +125,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   CircleAvatar(
                     radius: 40,
-                    backgroundColor: AppColors.primary.withOpacity(0.15),
+                    backgroundColor: AppColors.accent.withOpacity(0.2),
                     child: Text(
                       state.userName.isNotEmpty ? state.userName[0].toUpperCase() : 'U',
                       style: GoogleFonts.poppins(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
-                        color: AppColors.primary,
+                        color: AppColors.accent,
                       ),
                     ),
                   ),
@@ -150,12 +150,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ),
                         const SizedBox(width: 6),
-                        GestureDetector(
-                          onTap: () => setState(() {
+                        IconButton(
+                          onPressed: () => setState(() {
                             _isEditingName = true;
                             _nameController.text = state.userName;
                           }),
-                          child: const Icon(Icons.edit_rounded, color: AppColors.primary, size: 16),
+                          icon: const Icon(Icons.edit_rounded, color: AppColors.accent, size: 20),
                         ),
                       ],
                     )

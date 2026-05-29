@@ -37,10 +37,13 @@ class SpendSyncApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.background,
         primaryColor: AppColors.primary,
         colorScheme: const ColorScheme.dark(
-          primary: AppColors.primary,
+          primary: AppColors.accent,
           secondary: AppColors.accent,
           surface: AppColors.cardBackground,
           error: AppColors.error,
+          onPrimary: AppColors.primary,
+          onSecondary: AppColors.primary,
+          onSurface: AppColors.textPrimary,
         ),
         textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme)
             .copyWith(
@@ -56,9 +59,9 @@ class SpendSyncApp extends StatelessWidget {
           titleTextStyle: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: AppColors.textPrimary,
           ),
-          iconTheme: IconThemeData(color: Colors.white),
+          iconTheme: IconThemeData(color: AppColors.accent),
         ),
         cardTheme: CardThemeData(
           color: AppColors.cardBackground,
@@ -73,25 +76,25 @@ class SpendSyncApp extends StatelessWidget {
         ),
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
-          fillColor: AppColors.cardBackground,
+          fillColor: AppColors.surfaceLight,
           labelStyle: const TextStyle(color: AppColors.textLight),
-          floatingLabelStyle: const TextStyle(color: AppColors.primary),
+          floatingLabelStyle: const TextStyle(color: AppColors.accent),
           hintStyle: const TextStyle(color: AppColors.textLight),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
             borderSide: BorderSide(
-              color: AppColors.surfaceLight.withOpacity(0.3),
+              color: AppColors.surfaceLight,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
             borderSide: BorderSide(
-              color: AppColors.surfaceLight.withOpacity(0.3),
+              color: AppColors.surfaceLight,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
-            borderSide: const BorderSide(color: AppColors.primary, width: 2),
+            borderSide: const BorderSide(color: AppColors.accent, width: 2),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),

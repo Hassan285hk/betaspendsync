@@ -235,7 +235,7 @@ class _BudgetScreenState extends State<BudgetScreen> {
                             _isEditing = true;
                             _budgetController.text = state.monthlyBudget.toStringAsFixed(0);
                           }),
-                          icon: const Icon(Icons.edit_rounded, color: AppColors.primary, size: 20),
+                          icon: const Icon(Icons.edit_rounded, color: AppColors.accent, size: 20),
                         )
                       else
                         IconButton(

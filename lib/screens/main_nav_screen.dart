@@ -82,15 +82,15 @@ class _MainNavScreenState extends State<MainNavScreen> {
                           ),
                           decoration: BoxDecoration(
                             color: isSelected
-                                ? AppColors.primary.withOpacity(0.15)
+                                ? AppColors.accent.withOpacity(0.18)
                                 : Colors.transparent,
                             borderRadius: BorderRadius.circular(14),
                           ),
                           child: Icon(
                             item.icon,
                             color: isSelected
-                                ? AppColors.primary
-                                : AppColors.textLight.withOpacity(0.8),
+                                ? AppColors.accent
+                                : AppColors.textLight,
                             size: 22,
                           ),
                         ),
@@ -100,7 +100,7 @@ class _MainNavScreenState extends State<MainNavScreen> {
                           style: GoogleFonts.poppins(
                             fontSize: 10,
                             fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
-                            color: isSelected ? AppColors.primary : AppColors.textLight,
+                            color: isSelected ? AppColors.accent : AppColors.textLight,
                           ),
                         ),
                       ],

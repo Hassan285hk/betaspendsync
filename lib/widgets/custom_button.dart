@@ -29,21 +29,21 @@ class CustomButton extends StatelessWidget {
           ? OutlinedButton(
               onPressed: isLoading ? null : onPressed,
               style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: AppColors.primary, width: 2),
+                side: const BorderSide(color: AppColors.accent, width: 2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
                 ),
               ),
-              child: _buildChild(AppColors.primary),
+              child: _buildChild(AppColors.accent),
             )
           : Container(
               decoration: BoxDecoration(
-                gradient: AppColors.primaryGradient,
+                gradient: AppColors.accentGradient,
                 borderRadius: BorderRadius.circular(14),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.primary.withOpacity(0.4),
-                    blurRadius: 12,
+                    color: AppColors.accent.withOpacity(0.4),
+                    blurRadius: 14,
                     offset: const Offset(0, 6),
                   ),
                 ],
@@ -57,7 +57,8 @@ class CustomButton extends StatelessWidget {
                     borderRadius: BorderRadius.circular(14),
                   ),
                 ),
-                child: _buildChild(Colors.white),
+                // Dark text on yellow background for contrast
+                child: _buildChild(AppColors.primary),
               ),
             ),
     );
@@ -80,13 +81,13 @@ class CustomButton extends StatelessWidget {
           Text(label,
               style: GoogleFonts.poppins(
                   fontSize: 16,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   color: color)),
         ],
       );
     }
     return Text(label,
         style: GoogleFonts.poppins(
-            fontSize: 16, fontWeight: FontWeight.w600, color: color));
+            fontSize: 16, fontWeight: FontWeight.w700, color: color));
   }
 }
