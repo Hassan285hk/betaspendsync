@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "695581194330",
+    "project_id": "spendsync-b3ac4",
+    "storage_bucket": "spendsync-b3ac4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695581194330:android:1a60f79ff7140c793b8063",
+        "android_client_info": {
+          "package_name": "com.example.spendapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695581194330-q8egmb11j730oi3ugm6nd6eq33m1itl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRDX2iXcugPD-8BzeLVmDGFpRUj0ADleo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695581194330-q8egmb11j730oi3ugm6nd6eq33m1itl2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "695581194330-csnds8vjhknr6ldgai6889j7s45o2r3m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.spendapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695581194330:android:35ce428cd06ce0683b8063",
+        "android_client_info": {
+          "package_name": "com.example.spendsync_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695581194330-q8egmb11j730oi3ugm6nd6eq33m1itl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRDX2iXcugPD-8BzeLVmDGFpRUj0ADleo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695581194330-q8egmb11j730oi3ugm6nd6eq33m1itl2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "695581194330-csnds8vjhknr6ldgai6889j7s45o2r3m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.spendapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
