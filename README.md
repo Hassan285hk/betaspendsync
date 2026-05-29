@@ -1,4 +1,4 @@
-# betaspendsync
+# SpendSync
 
 A new Flutter project.
 
